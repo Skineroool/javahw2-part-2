@@ -6,14 +6,14 @@ public class Main {
     public static void main(String[] args) {
         int balance = 100;
         int replenishment = 1100;
-        int x = 100;
+        int rubles = 100; // Количество рублей для зачисления одного бонуса
         if (replenishment >= 1000) {
-            int bonus = (replenishment / x);
+            int bonus = (replenishment / rubles);
             System.out.println(balance + replenishment);
             System.out.println(bonus);
-        }
-        if (replenishment < 1000) {
+        } else {
             System.out.println(balance + replenishment);
         }
+
     }
-}
+    }
